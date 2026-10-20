@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="cs/style.css">
+    <script src="js/validation.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <nav class="page-nav">
+            <a class="active" href="validation.html">Registration</a>
+            <a href="data.html">Data Table</a>
+        </nav>
+
+        <section class="card">
+            <h1>Registration Form</h1>
+            <p class="intro">Fill in the fields below.</p>
+
+            <form id="registration-form" novalidate>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name">
+                    <small class="error" id="name-error"></small>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" autocomplete="email">
+                    <small class="error" id="email-error"></small>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" autocomplete="new-password">
+                    <small class="error" id="password-error"></small>
+                </div>
+
+                <div class="field">
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" autocomplete="new-password">
+                    <small class="error" id="confirm-password-error"></small>
+                </div>
+
+                <div class="field">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="1" max="120">
+                    <small class="error" id="age-error"></small>
+                </div>
+
+                <button type="submit">Register</button>
+                <p id="success-message" class="success" role="status"></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

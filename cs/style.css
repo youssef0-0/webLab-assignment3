@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background: #f2f4f7;
+    color: #202938;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.page-nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.page-nav a {
+    padding: 9px 13px;
+    color: #245b9e;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.page-nav a.active,
+.page-nav a:hover {
+    background: #245b9e;
+    color: white;
+}
+
+.card {
+    padding: 26px;
+    background: white;
+    border: 1px solid #dce1e8;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(30, 45, 65, 0.05);
+}
+
+h1 {
+    margin: 0 0 4px;
+}
+
+.intro {
+    margin-top: 4px;
+    color: #667085;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b9c2cf;
+    border-radius: 7px;
+    font: inherit;
+}
+
+input:focus {
+    outline: 2px solid #b8d5fa;
+    border-color: #245b9e;
+}
+
+button {
+    padding: 10px 15px;
+    color: white;
+    background: #245b9e;
+    border: 0;
+    border-radius: 7px;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #194579;
+}
+
+.error {
+    display: block;
+    min-height: 18px;
+    margin-top: 3px;
+    color: #b42318;
+}
+
+.success {
+    color: #187545;
+    font-weight: bold;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 14px 0 18px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 11px 12px;
+    border-bottom: 1px solid #e1e5eb;
+    text-align: left;
+}
+
+th {
+    background: #edf2f8;
+}
+
+tbody tr:hover {
+    background: #f7f9fc;
+}
+
+@media (max-width: 520px) {
+    .card {
+        padding: 18px;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>People Data</title>
+    <link rel="stylesheet" href="cs/style.css">
+    <script src="js/data.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <nav class="page-nav">
+            <a href="validation.html">Registration</a>
+            <a class="active" href="data.html">Data Table</a>
+        </nav>
+
+        <section class="card">
+            <h1>People Data</h1>
+            <p class="intro">Search for a person or sort the table.</p>
+
+            <label for="search">Search</label>
+            <input type="text" id="search" placeholder="Search name, age, or city">
+
+            <div class="button-row">
+                <button type="button" id="sort-name">Sort by name</button>
+                <button type="button" id="sort-age">Sort by age</button>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+                    <tbody id="people-table"></tbody>
+                </table>
+            </div>
+            <p id="result-count" class="intro" aria-live="polite"></p>
+        </section>
+    </main>
+</body>
+</html>
